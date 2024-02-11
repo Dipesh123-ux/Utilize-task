@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Add this CSS to your stylesheets or use inline styles in your component */
+
+/* Define the styles for the scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the entire scrollbar */
+}
+
+/* Define the style of the track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: #3b89f6;
+  /* Color of the track */
+}
+
+/* Define the style of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #efefef;
+  /* Color of the thumb */
+  /* Rounded corners of the thumb */
+  border-radius: 3px;
+  border: 3px solid #dedbdb;
+  /* Border around the thumb */
+}
+
+/* Define the style when the thumb is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ded8d8;
+  /* Color of the thumb on hover */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  /* Adjust the width as needed */
+  width: 100%;
+  z-index: 9999;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
